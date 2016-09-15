@@ -4,10 +4,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Исходные файлы"
                    projectFiles="true">
+      <itemPath>src/FileSystem.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Файлы заголовков"
                    projectFiles="true">
+      <itemPath>include/Config.h</itemPath>
+      <itemPath>include/FileSystem.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Файлы ресурсов"
@@ -34,7 +37,22 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}</output>
+        </linkerTool>
       </compileType>
+      <item path="include/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/FileSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="2">
       <toolsSet>
@@ -56,6 +74,12 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/FileSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

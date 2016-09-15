@@ -34,7 +34,8 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/src/FileSystem.o
 
 
 # C Compiler Flags
@@ -55,11 +56,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT}
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT}: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+
+${OBJECTDIR}/src/FileSystem.o: src/FileSystem.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/FileSystem.o src/FileSystem.cpp
 
 # Subprojects
 .build-subprojects:
@@ -67,7 +73,7 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT}: ${O
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT}
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}
 
 # Subprojects
 .clean-subprojects:

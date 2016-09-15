@@ -9,8 +9,8 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=liblibrpc4stepic.so
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/liblibrpc4stepic.so
+CND_ARTIFACT_NAME_Debug=librpc4stepic.so
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/librpc4stepic.so
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
 CND_PACKAGE_NAME_Debug=liblibrpc4stepic.so.tar
 CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/liblibrpc4stepic.so.tar
