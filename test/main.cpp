@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "FileSystem.h"
 using namespace std;
 
 /*
@@ -14,7 +15,9 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    cout << "Hello" << endl;
+    FileSystem o;
+    
+    cout << "Hello" << o.Test() << endl;
     return 0;
 }
 
