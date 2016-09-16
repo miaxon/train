@@ -7,13 +7,14 @@
 
 #ifndef FILESYSTEM_H
 #define	FILESYSTEM_H
+#include "RPCObject.h"
 namespace rpc4stepic {
 
-    class FileSystem {
+    class RPCFileSystem : public RPCObject {
     public:
-        FileSystem();
-        FileSystem(const FileSystem& orig);
-        virtual ~FileSystem();
+        RPCFileSystem();
+        RPCFileSystem(const RPCFileSystem& orig);
+        virtual ~RPCFileSystem();
         int Test();
     private:
 
