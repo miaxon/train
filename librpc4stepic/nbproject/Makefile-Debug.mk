@@ -35,7 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/src/FileSystem.o
+	${OBJECTDIR}/src/net/ZMQClient.o \
+	${OBJECTDIR}/src/rpc/RPCFileSystem.o \
+	${OBJECTDIR}/src/rpc/RPCObject.o \
+	${OBJECTDIR}/src/serialize/Packer.o \
+	${OBJECTDIR}/src/serialize/Request.o \
+	${OBJECTDIR}/src/serialize/Responce.o
 
 
 # C Compiler Flags
@@ -62,10 +67,35 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}: ${OBJE
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
 
-${OBJECTDIR}/src/FileSystem.o: src/FileSystem.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/src/net/ZMQClient.o: src/net/ZMQClient.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/net
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/FileSystem.o src/FileSystem.cpp
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/net/ZMQClient.o src/net/ZMQClient.cpp
+
+${OBJECTDIR}/src/rpc/RPCFileSystem.o: src/rpc/RPCFileSystem.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc/RPCFileSystem.o src/rpc/RPCFileSystem.cpp
+
+${OBJECTDIR}/src/rpc/RPCObject.o: src/rpc/RPCObject.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc/RPCObject.o src/rpc/RPCObject.cpp
+
+${OBJECTDIR}/src/serialize/Packer.o: src/serialize/Packer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/serialize
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Packer.o src/serialize/Packer.cpp
+
+${OBJECTDIR}/src/serialize/Request.o: src/serialize/Request.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/serialize
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Request.o src/serialize/Request.cpp
+
+${OBJECTDIR}/src/serialize/Responce.o: src/serialize/Responce.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/serialize
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Responce.o src/serialize/Responce.cpp
 
 # Subprojects
 .build-subprojects:

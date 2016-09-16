@@ -9,7 +9,11 @@
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>src/serialize</sourceRootElem>
+                <sourceRootElem>src/rpc</sourceRootElem>
+                <sourceRootElem>src/net</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>Debug</name>

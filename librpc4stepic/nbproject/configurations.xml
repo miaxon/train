@@ -4,13 +4,29 @@
     <logicalFolder name="SourceFiles"
                    displayName="Исходные файлы"
                    projectFiles="true">
-      <itemPath>src/FileSystem.cpp</itemPath>
+      <logicalFolder name="net" displayName="net" projectFiles="true">
+        <itemPath>src/net/ZMQClient.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="rpc" displayName="rpc" projectFiles="true">
+        <itemPath>src/rpc/RPCFileSystem.cpp</itemPath>
+        <itemPath>src/rpc/RPCObject.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="serialize" displayName="serialize" projectFiles="true">
+        <itemPath>src/serialize/Packer.cpp</itemPath>
+        <itemPath>src/serialize/Request.cpp</itemPath>
+        <itemPath>src/serialize/Responce.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Файлы заголовков"
                    projectFiles="true">
-      <itemPath>include/Config.h</itemPath>
-      <itemPath>include/FileSystem.h</itemPath>
+      <itemPath>include/Packer.h</itemPath>
+      <itemPath>include/RPCConfig.h</itemPath>
+      <itemPath>include/RPCFileSystem.h</itemPath>
+      <itemPath>include/RPCObject.h</itemPath>
+      <itemPath>include/Request.h</itemPath>
+      <itemPath>include/Responce.h</itemPath>
+      <itemPath>include/ZMQClient.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Файлы ресурсов"
@@ -28,6 +44,11 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>src/serialize</Elem>
+    <Elem>src/rpc</Elem>
+    <Elem>src/net</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="2">
@@ -47,11 +68,31 @@
           <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}</output>
         </linkerTool>
       </compileType>
-      <item path="include/Config.h" ex="false" tool="3" flavor2="0">
+      <item path="include/Packer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/FileSystem.h" ex="false" tool="3" flavor2="0">
+      <item path="include/RPCConfig.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/FileSystem.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/RPCFileSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/RPCObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Request.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Responce.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/ZMQClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc/RPCFileSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc/RPCObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Packer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Request.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Responce.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="2">
@@ -74,11 +115,31 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="include/Config.h" ex="false" tool="3" flavor2="0">
+      <item path="include/Packer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/FileSystem.h" ex="false" tool="3" flavor2="0">
+      <item path="include/RPCConfig.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/FileSystem.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/RPCFileSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/RPCObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Request.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Responce.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/ZMQClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc/RPCFileSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc/RPCObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Packer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Request.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/serialize/Responce.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
