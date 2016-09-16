@@ -9,7 +9,7 @@
 #include <iostream>
 #include "FileSystem.h"
 using namespace std;
-
+using namespace rpc4stepic;
 /*
  * 
  */
@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 
     FileSystem o;
     
-    cout << "Hello" << o.Test() << endl;
+    cout << "Hello" << " " << o.Test() << endl;
     return 0;
 }
 
