@@ -5,15 +5,16 @@
  * Created on 16 Сентябрь 2016 г., 11:26
  */
 
-#include "Responce.h"
+#include "Request.h"
 namespace serialize {
 
-    Responce::Responce() {
+    Request::Request() {
     }
 
-    Responce::Responce(const Responce& orig) {
+    Request::Request(const Request& orig) {
     }
 
-    Responce::~Responce() {
+    Request::~Request() {
     }
 }
+

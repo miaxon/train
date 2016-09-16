@@ -7,15 +7,21 @@
 
 #ifndef REQUEST_H
 #define	REQUEST_H
+#include <string>
+namespace serialize {
 
-class Request {
-public:
-    Request();
-    Request(const Request& orig);
-    virtual ~Request();
-private:
+    class __attribute__((visibility("hidden"))) Request {
+    public:
+        Request();
+        Request(const Request& orig);
+        Request(std::string& str);
+        virtual ~Request();
+        std::string str_arg;
+        
+    private:
 
-};
+    };
+}
 
 #endif	/* REQUEST_H */
 

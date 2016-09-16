@@ -18,7 +18,7 @@ namespace rpc4stepic {
         RPCObject(const RPCObject& orig);
         virtual ~RPCObject();
     protected:
-        int call(const Request& req, Responce& rsp);
+        int call(const serialize::Request& req, serialize::Responce& rsp);
     private:
         net::ZMQClient client;
 

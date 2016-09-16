@@ -7,15 +7,18 @@
 
 #ifndef RESPONCE_H
 #define	RESPONCE_H
+namespace serialize {
 
-class Responce {
-public:
-    Responce();
-    Responce(const Responce& orig);
-    virtual ~Responce();
-private:
-
-};
-
+    class __attribute__((visibility("hidden"))) Responce {
+    public:
+        Responce();
+        Responce(const Responce& orig);
+        virtual ~Responce();
+        int int_result;
+        int error;
+    private:
+        
+    };
+}
 #endif	/* RESPONCE_H */
 

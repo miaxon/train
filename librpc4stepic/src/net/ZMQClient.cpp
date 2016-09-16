@@ -16,4 +16,20 @@ namespace net {
 
     ZMQClient::~ZMQClient() {
     }
+
+    int ZMQClient::Connect(const std::string& server_string) {
+        return 0;
+    }
+
+    int Disconnect() {
+        return 0;
+    }
+
+    int Send(void* data) {
+        return 0;
+    }
+
+    int Send(const serialize::Request&) {
+        return 0;
+    }
 }

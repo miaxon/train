@@ -16,5 +16,8 @@ namespace rpc4stepic {
 
     RPCObject::~RPCObject() {
     }
+    int RPCObject::call(const serialize::Request& req, serialize::Responce& rsp){
+        return 0;
+    }
 }
 
