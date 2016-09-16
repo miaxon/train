@@ -7,7 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "FileSystem.h"
+#include "RPCFileSystem.h"
 using namespace std;
 using namespace rpc4stepic;
 /*
@@ -15,9 +15,9 @@ using namespace rpc4stepic;
  */
 int main(int argc, char** argv) {
 
-    FileSystem o;
+    RPCFileSystem o;
     
-    cout << "Hello" << " " << o.Test() << endl;
+    cout << "Hello" << " " << o.MakeDir("") << endl;
     return 0;
 }
 
