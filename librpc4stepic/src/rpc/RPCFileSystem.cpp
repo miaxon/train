@@ -17,7 +17,7 @@ namespace rpc4stepic {
     RPCFileSystem::~RPCFileSystem() {
     }
 
-    int RPCFileSystem::Test() {
+    int RPCFileSystem::MakeDir(const std::string& path) {
         return 111111;
     }
 }

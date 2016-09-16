@@ -13,7 +13,7 @@
 #include "Request.h"
 namespace net {
 
-    class __attribute__((visibility("hidden"))) ZMQClient {
+    class ZMQClient {
     public:
         ZMQClient();
         ZMQClient(const ZMQClient& orig);

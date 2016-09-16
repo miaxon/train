@@ -10,7 +10,7 @@
 #include <string>
 namespace serialize {
 
-    class __attribute__((visibility("hidden"))) Request {
+    class Request {
     public:
         Request();
         Request(const Request& orig);

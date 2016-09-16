@@ -7,7 +7,10 @@
 
 #ifndef FILESYSTEM_H
 #define	FILESYSTEM_H
+#include <cstdlib>
+#include <string>
 #include "RPCObject.h"
+
 namespace rpc4stepic {
 
     class RPCFileSystem : public RPCObject {
@@ -15,7 +18,7 @@ namespace rpc4stepic {
         RPCFileSystem();
         RPCFileSystem(const RPCFileSystem& orig);
         virtual ~RPCFileSystem();
-        int Test();
+        int MakeDir(const std::string& path);
     private:
 
     };

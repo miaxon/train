@@ -9,7 +9,7 @@
 #define	RESPONCE_H
 namespace serialize {
 
-    class __attribute__((visibility("hidden"))) Responce {
+    class Responce {
     public:
         Responce();
         Responce(const Responce& orig);
