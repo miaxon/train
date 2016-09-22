@@ -8,11 +8,12 @@
 #ifndef CONFIG_H
 #define	CONFIG_H
 namespace rpc4stepic {
+    namespace config {
 
-    class Config {
-    };
+        class Config {
+        };
+    }
 }
-
 
 #endif	/* CONFIG_H */
 
