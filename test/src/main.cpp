@@ -7,17 +7,20 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "easylogging++.h"
 #include "rpc/FileSystem.h"
 using namespace std;
 using namespace rpc4stepic;
 /*
  * 
  */
+INITIALIZE_EASYLOGGINGPP
+
 int main(int argc, char** argv) {
 
     rpc::FileSystem o;
     
-    cout << "Hello" << " " << o.MakeDir("") << endl;
+    LOG(INFO) << o.MakeDir("");
     return 0;
 }
 
