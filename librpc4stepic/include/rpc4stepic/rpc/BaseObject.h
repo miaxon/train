@@ -21,7 +21,7 @@ namespace rpc4stepic {
         protected:
             int call(const serialize::Request& req, serialize::Responce& rsp);
         private:
-            net::ZMQClient client;
+            //net::ZMQClient client("");
 
         };
     }

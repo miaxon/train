@@ -9,15 +9,14 @@
 #define	ZMQWORKER_H
 #include <string>
 #include <zmqpp/zmqpp.hpp>
+#include "easylogging++.h"
 class ZMQWorker {
 public:
-    ZMQWorker(zmqpp::context context);
-    ZMQWorker(const ZMQWorker& orig);
+    ZMQWorker(const std::string& identity);
     virtual ~ZMQWorker();
-    void Work(const std::string& bind_string);
+    void Work(zmqpp::context* ctx, const std::string& bind_string, const int identity);
 private:
-    zmqpp::context &m_ctx;
-    zmqpp::socket m_socket;
+    std::string m_identity;
 };
 
 #endif	/* ZMQWORKER_H */

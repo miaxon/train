@@ -11,20 +11,23 @@
 #include <string>
 #include <zmqpp/zmqpp.hpp>
 #include "serialize/Request.h"
+#include "easylogging++.h"
+#include "Defines.h"
 namespace rpc4stepic {
     namespace net {
 
         class ZMQClient {
         public:
             ZMQClient();
-            ZMQClient(const ZMQClient& orig);
+            ZMQClient(const zmqpp::endpoint_t& endpoint);
             virtual ~ZMQClient();
+            void Send(const std::string& msg);
             int Send(const rpc4stepic::serialize::Request&);
-            int SendAsync(const rpc4stepic::serialize::Request);
+            int SendAsync(const rpc4stepic::serialize::Request&);
         private:
-            int Connect(const std::string& server_string);
-            int Send(void* data);
-            int Disconnect();
+            zmqpp::context m_ctx;
+            zmqpp::socket m_socket;
+            zmqpp::endpoint_t m_endpoint;
         };
     }
 }

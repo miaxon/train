@@ -9,28 +9,36 @@
 namespace rpc4stepic {
     namespace net {
 
-        ZMQClient::ZMQClient() {
+        ZMQClient::ZMQClient() :
+        m_ctx(),
+        m_socket(m_ctx, zmqpp::socket_type::req) {
         }
 
-        ZMQClient::ZMQClient(const ZMQClient& orig) {
+        ZMQClient::ZMQClient(const zmqpp::endpoint_t& endpoint) :
+        m_ctx(),
+        m_socket(m_ctx, zmqpp::socket_type::req),
+        m_endpoint(endpoint) {
+            LOG(INFO) << "Starting sender";
+            m_socket.connect(m_endpoint);
         }
 
         ZMQClient::~ZMQClient() {
         }
 
-        int ZMQClient::Connect(const std::string& server_string) {
-            return 0;
+        void ZMQClient::Send(const std::string& msg) {
+            
+
+            std::string rsp;
+            m_socket.send(msg);
+            m_socket.receive(rsp);
+            
+            LOG(INFO) << rsp;
+
+
+
         }
 
-        int Disconnect() {
-            return 0;
-        }
-
-        int Send(void* data) {
-            return 0;
-        }
-
-        int Send(const rpc4stepic::serialize::Request&) {
+        int ZMQClient::Send(const rpc4stepic::serialize::Request&) {
             return 0;
         }
     }
