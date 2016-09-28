@@ -10,7 +10,6 @@
 #include <thread>
 #include <chrono>
 #include "easylogging++.h"
-#include "rpc/FileSystem.h"
 #include "net/ZMQServer.h"
 #include "net/ZMQClient.h"
 #include "Defines.h"
@@ -23,17 +22,27 @@ using namespace rpc4stepic;
 INITIALIZE_EASYLOGGINGPP
 static std::string endpoint_local("tcp://127.0.0.1:3333");
 
-int main(int argc, char** argv) {
-
-    LOG(INFO) << "Starting..";
+void test_net() {
+    LOG(INFO) << "Starting test net.";
     net::ZMQServer srv(endpoint_local);
 
 
     net::ZMQClient clt(endpoint_local);
 
 
-    for(int i = 0; i< 1000000; i++)
-    clt.Send("Hello!");
+    for (int i = 0; i < 1000000; i++)
+        clt.Send("Hello!");
+
+}
+
+void start_srv() {
+    LOG(INFO) << "Starting server.";
+    net::ZMQServer srv(endpoint_local);
+
+}
+
+int main(int argc, char** argv) {
+    start_srv();
 
 
 
