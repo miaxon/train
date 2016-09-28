@@ -11,7 +11,7 @@
 Сериализация запросов будет производиться с помощью библиотеки msgpack - http://msgpack.org/
 
 
-Для обеих сторонних библиотек будут задействованы официальные С++-биндинги: cppzmq (https://github.com/zeromq/cppzmq) и 
+Для обеих сторонних библиотек будут задействованы официальные С++-биндинги: zmqpp (https://github.com/zeromq/zmqpp) и 
 msgpack-с (https://github.com/msgpack/msgpack-c)
 
 
