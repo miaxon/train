@@ -9,11 +9,9 @@
 #define	ZMQSERVER_H
 
 #include <string>
+#include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
-#include "zmqpp/context.hpp"
-#include "zmqpp/message.hpp"
 #include "zmqpp/proxy.hpp" 
-#include "serialize/Request.h"
 #include "ZMQWorker.h"
 #include "Error.h"
 #include "Defines.h"

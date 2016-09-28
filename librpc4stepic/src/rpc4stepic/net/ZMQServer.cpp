@@ -26,14 +26,13 @@ namespace rpc4stepic {
 
         void ZMQServer::run() {
             LOG(INFO) << "Starting server";
-
             m_frontend.bind(m_endpoint);
-            std::string backend = "inproc://" + string(std::tmpnam(nullptr));
+            std::string backend = "inproc://" + UUID::GetUUIDString();
             m_backend.bind(backend);
             
             for (int i = 0; i < m_nworkers; ++i) {
-                ZMQWorker worker("XXXXX");
-                std::thread worker_thread(std::bind(&ZMQWorker::Work, &worker, &m_ctx, backend, i));
+                ZMQWorker worker;
+                std::thread worker_thread(std::bind(&ZMQWorker::Work, &worker, &m_ctx, backend));
                 worker_thread.detach();
             }
             try {

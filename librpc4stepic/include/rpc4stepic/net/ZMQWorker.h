@@ -8,13 +8,14 @@
 #ifndef ZMQWORKER_H
 #define	ZMQWORKER_H
 #include <string>
+#include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
 #include "easylogging++.h"
 class ZMQWorker {
 public:
-    ZMQWorker(const std::string& identity);
+    ZMQWorker();
     virtual ~ZMQWorker();
-    void Work(zmqpp::context* ctx, const std::string& bind_string, const int identity);
+    void Work(zmqpp::context* ctx, const std::string& bind_string);
 private:
     std::string m_identity;
 };

@@ -25,21 +25,23 @@ namespace rpc4stepic {
         ZMQClient::~ZMQClient() {
         }
 
+        int ZMQClient::Connect(const zmqpp::endpoint_t& endpoint) {
+            LOG(INFO) << "Starting sender";
+            m_socket.connect(m_endpoint);
+        }
+
         void ZMQClient::Send(const std::string& msg) {
-            
+
 
             std::string rsp;
             m_socket.send(msg);
             m_socket.receive(rsp);
-            
+
             LOG(INFO) << rsp;
 
 
 
         }
 
-        int ZMQClient::Send(const rpc4stepic::serialize::Request&) {
-            return 0;
-        }
     }
 }
