@@ -5,17 +5,25 @@ namespace rpc4stepic {
     namespace rpc {
         namespace data {
 
-            class Params{
-                public:
-                template <typename... Args >
-                Params(Args... args) {
-                    msgpack::type::tuple < Args...> src(args...);
-                    msgpack::pack(SerializedData, src);
-                }
-                virtual ~Params();
-                msgpack::sbuffer SerializedData;
-                private:
+            class params {
+            public:
 
+                template <typename... Args >
+                params(Args... args) {
+                    msgpack::type::tuple < Args...> tuple(args...);
+                    msgpack::pack(m_sbuf, tuple);
+                }
+                virtual ~params();
+
+                char* data() {
+                    return m_sbuf.data();
+                }
+
+                size_t size() {
+                    return m_sbuf.size();
+                }
+            private:
+                msgpack::sbuffer m_sbuf;
 
             };
         }

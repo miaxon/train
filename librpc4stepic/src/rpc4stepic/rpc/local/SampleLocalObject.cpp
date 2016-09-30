@@ -10,15 +10,17 @@ namespace rpc4stepic {
     namespace rpc {
         namespace local {
 
-            SampleLocalObject::SampleLocalObject() {
+            SampleLocalObject::SampleLocalObject(zmqpp::endpoint_t& endpoint) : LocalObject(endpoint) {
             }
 
-            SampleLocalObject::SampleLocalObject(const SampleLocalObject& orig) {
-            }
 
             SampleLocalObject::~SampleLocalObject() {
             }
-            
+            int SampleLocalObject::SampleMethod(int i, bool b, std::string s){
+                data::params header(std::string(""), std::string(""));
+                data::params parms(i, b, s);
+                Call(header, parms);
+            }
         }
     }
 }

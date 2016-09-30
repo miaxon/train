@@ -17,9 +17,9 @@ namespace rpc4stepic {
 
             class SampleLocalObject : public LocalObject {
             public:
-                SampleLocalObject();
-                SampleLocalObject(const SampleLocalObject& orig);
+                SampleLocalObject(zmqpp::endpoint_t& endpoint);                
                 virtual ~SampleLocalObject();
+                int SampleMethod(int i, bool b, std::string s);
             private:
 
             };

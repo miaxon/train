@@ -10,18 +10,17 @@ namespace rpc4stepic {
     namespace rpc {
         namespace local {
 
-            LocalObject::LocalObject() {
-            }
-
-            LocalObject::LocalObject(const LocalObject& orig) {
+            LocalObject::LocalObject(zmqpp::endpoint_t& endpoint) : m_client(endpoint) {
             }
 
             LocalObject::~LocalObject() {
             }
 
-            int LocalObject::Initialize(zmqpp::endpoint_t& endpoint) {
-                m_client.Connect(endpoint);
-                
+            int LocalObject::Call(data::params& header, data::params& params, void* raw_data) {
+                zmqpp::message zmsg;
+                zmsg.add_raw(header.data(), header.size());                
+                    
+                m_client.Send(zmsg);
             }
         }
     }
