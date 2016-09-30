@@ -17,10 +17,11 @@ namespace rpc4stepic {
                 LocalObject();
                 LocalObject(const LocalObject& orig);
                 virtual ~LocalObject();
-                virtual int Initialize(zmqpp::endpoint_t& endpoint, std::string& remote_class);
+                virtual int Initialize(zmqpp::endpoint_t& endpoint);
             protected:
                 net::ZMQClient m_client;
                 std::string m_remote_class;
+                
             private:
                 
 

@@ -19,9 +19,9 @@ namespace rpc4stepic {
             LocalObject::~LocalObject() {
             }
 
-            int LocalObject::Initialize(zmqpp::endpoint_t& endpoint, std::string& use_class) {
+            int LocalObject::Initialize(zmqpp::endpoint_t& endpoint) {
                 m_client.Connect(endpoint);
-                m_remote_class = use_class;
+                
             }
         }
     }
