@@ -31,23 +31,22 @@ void test_net() {
     net::ZMQClient clt(endpoint_local);
 
 
-    for (int i = 0; i < 1000000; i++)
+    for (int i = 0; i < 10; i++)
         clt.Send("Hello!");
 
 }
 
 void start_srv() {
-    LOG(INFO) << "Starting server.";
     net::ZMQServer srv(endpoint_local);
 
 }
-
-int main(int argc, char** argv) {
-    start_srv();
+void test_rpc(){
+    
+    net::ZMQServer srv(endpoint_local);
     rpc::local::SampleLocalObject o(endpoint_local);
     o.SampleMethod(10,false,std::string("hello"));
-
-
-    return 0;
+}
+int main(int argc, char** argv) {
+    test_rpc();
 }
 
