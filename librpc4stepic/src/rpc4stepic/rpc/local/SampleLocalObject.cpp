@@ -17,8 +17,8 @@ namespace rpc4stepic {
             SampleLocalObject::~SampleLocalObject() {
             }
             int SampleLocalObject::SampleMethod(int i, bool b, std::string s){
-                data::params header(std::string(""), std::string(""));
-                data::params parms(i, b, s);
+                data::Tuple header(std::string(""), std::string(""));
+                data::Tuple parms(i, b, s);
                 Call(header, parms);
             }
         }
