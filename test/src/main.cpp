@@ -13,6 +13,7 @@
 #include "net/ZMQServer.h"
 #include "net/ZMQClient.h"
 #include "Defines.h"
+#include "rpc/local/SampleLocalObject.h"
 using namespace std;
 using namespace rpc4stepic;
 
@@ -43,7 +44,8 @@ void start_srv() {
 
 int main(int argc, char** argv) {
     start_srv();
-
+    rpc::local::SampleLocalObject o(endpoint_local);
+    o.SampleMethod(10,false,std::string("hello"));
 
 
     return 0;

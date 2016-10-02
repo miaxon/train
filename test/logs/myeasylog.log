@@ -4651,3 +4651,18 @@
 2016-09-28 14:44:12,482 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
 2016-09-28 14:45:25,547 INFO  [default] Starting server.
 2016-09-28 14:45:25,549 INFO  [default] Starting server
+2016-10-01 22:20:29,005 INFO  [default] Starting server.
+2016-10-01 22:20:29,006 INFO  [default] Starting server
+2016-10-01 22:20:29,006 INFO  [default] Starting server
+2016-10-01 22:20:29,006 INFO  [default] Starting serverStarting sender
+2016-10-01 22:20:29,006 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+2016-10-01 22:20:29,007 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-01 22:21:30,681 INFO  [default] Starting server.
+2016-10-01 22:21:30,687 INFO  [default] Starting server
+2016-10-01 22:21:30,688 INFO  [default] Starting sender
+2016-10-01 22:21:44,098 INFO  [default] Starting server.
+2016-10-01 22:21:44,119 INFO  [default] Starting server
+2016-10-01 22:22:02,252 INFO  [default] Starting server.
+2016-10-01 22:22:02,270 INFO  [default] Starting server
+2016-10-01 22:22:13,789 INFO  [default] Starting server.
+2016-10-01 22:22:13,790 INFO  [default] Starting server
