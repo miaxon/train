@@ -9,18 +9,17 @@
 #define	SAMPLE_H
 #include <cstdlib>
 #include <string>
-#include "RemoteObject.h"
+#include "Stub.h"
 
 namespace rpc4stepic {
     namespace rpc {
         namespace remote {
 
-            class SampleRemoteObject : public RemoteObject {
+            class SampleStub : public Stub {
             public:
-                SampleRemoteObject();
-                SampleRemoteObject(const SampleRemoteObject& orig);
-                virtual ~SampleRemoteObject();
-                
+                SampleStub(zmqpp::message* request, zmqpp::message* responce);
+                virtual ~SampleStub();
+                int Call();
             private:
 
             };

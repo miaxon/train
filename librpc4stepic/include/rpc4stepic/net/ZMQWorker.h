@@ -11,14 +11,20 @@
 #include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
 #include "easylogging++.h"
-class ZMQWorker {
-public:
-    ZMQWorker();
-    virtual ~ZMQWorker();
-    void Work(zmqpp::context* ctx, const std::string& bind_string);
-private:
-    std::string m_identity;
-};
+namespace rpc4stepic {
+    namespace net {
+
+        class ZMQWorker {
+        public:
+            ZMQWorker();
+            virtual ~ZMQWorker();
+            void Work(zmqpp::context* ctx, const std::string& bind_string);
+        private:
+            int Call(zmqpp::message* request, zmqpp::messqge* responce);
+            std::string m_identity;
+        };
+    }
+}
 
 #endif	/* ZMQWORKER_H */
 

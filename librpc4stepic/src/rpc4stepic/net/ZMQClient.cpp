@@ -42,17 +42,12 @@ namespace rpc4stepic {
 
 
         }
-        int ZMQClient::Send(zmqpp::message& msg) {
 
-
-            zmqpp::message rsp;
-            m_socket.send(msg);
-            m_socket.receive(rsp);
-
+        bool ZMQClient::Send(zmqpp::message& req, zmqpp::message& rsp) {
+            if (m_socket.send(req))
+                return m_socket.receive(rsp);
+            return false;
             //LOG(INFO) << rsp.;
-
-
-
         }
 
     }

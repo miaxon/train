@@ -6,26 +6,32 @@
  */
 
 #include "net/ZMQWorker.h"
+namespace rpc4stepic {
+    namespace net {
 
-ZMQWorker::ZMQWorker() {
-    m_identity = UUID::GetUUIDString();
-}
-
-ZMQWorker::~ZMQWorker() {
-}
-
-void ZMQWorker::Work(zmqpp::context* ctx, const std::string& bind_string) {  
-    zmqpp::socket worker(*ctx, zmqpp::socket_type::rep);
-    worker.connect(bind_string);
-    try {
-        while (true) {
-            std::string msg;
-            worker.receive(msg);
-            LOG(INFO) << "worker recieved " << msg;
-            msg += "... yeap!";
-            worker.send(msg);
+        ZMQWorker::ZMQWorker() {
+            m_identity = utils::UUID::GetUUIDString();
         }
-    } catch (std::exception &e) {
+
+        ZMQWorker::~ZMQWorker() {
+        }
+
+        void ZMQWorker::Work(zmqpp::context* ctx, const std::string& bind_string) {
+            zmqpp::socket worker(*ctx, zmqpp::socket_type::rep);
+            worker.connect(bind_string);
+            try {
+                while (true) {
+                    zmqpp::message req, rsp;
+                    worker.receive(req);
+                    Call(&req, &rsp);
+                    worker.send(rsp);
+                }
+            } catch (std::exception &e) {
+            }
+        }
+        int ZMQWorker::Call(zmqpp::message* request, zmqpp::message* responce){
+            Stub  s(request, responce);
+            s.Call();
+        }
     }
 }
-

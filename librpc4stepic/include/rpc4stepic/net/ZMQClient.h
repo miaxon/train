@@ -21,8 +21,8 @@ namespace rpc4stepic {
             ZMQClient(const zmqpp::endpoint_t& endpoint);
             virtual ~ZMQClient();
             int Connect(const zmqpp::endpoint_t& endpoint);
-            void Send(const std::string& msg);
-            int Send(zmqpp::message& msg);
+            void Send(const std::string& msg); /* for tests */
+            bool Send(zmqpp::message& req, zmqpp::message& rsp);
         private:
             zmqpp::context m_ctx;
             zmqpp::socket m_socket;

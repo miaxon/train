@@ -9,17 +9,17 @@
 #define	SAMPLE_H
 #include <cstdlib>
 #include <string>
-#include "LocalObject.h"
+#include "Stub.h"
 
 namespace rpc4stepic {
     namespace rpc {
         namespace local {
 
-            class SampleLocalObject : public LocalObject {
+            class SampleStub : public Stub {
             public:
-                SampleLocalObject(zmqpp::endpoint_t& endpoint);                
-                virtual ~SampleLocalObject();
-                int SampleMethod(int i, bool b, std::string s);
+                SampleStub(zmqpp::endpoint_t& endpoint);                
+                virtual ~SampleStub();
+                std::string SampleMethod(int i, bool b, std::string s);
             private:
 
             };

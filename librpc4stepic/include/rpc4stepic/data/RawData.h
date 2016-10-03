@@ -14,8 +14,11 @@ namespace rpc4stepic {
             class RawData {
             public:
 
-                RawData(char* buf, size_t size) :m_buf(buf), m_size(size) {
-                    
+                RawData() {
+                }
+
+                RawData(char* buf, size_t size) : m_buf(buf), m_size(size) {
+
                 }
                 virtual ~RawData();
 

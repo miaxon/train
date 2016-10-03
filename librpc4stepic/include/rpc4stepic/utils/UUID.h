@@ -10,15 +10,19 @@
 #include <cstdlib>
 #include <uuid/uuid.h>
 #include <string>
-class UUID {
-public:
-    UUID();
-    UUID(const UUID& orig);
-    virtual ~UUID();
-    static std::string GetUUIDString();
-private:
+namespace rpc4stepic {
+    namespace utils {
 
-};
+        class UUID {
+        public:
+            UUID();
+            UUID(const UUID& orig);
+            virtual ~UUID();
+            static std::string GetUUIDString();
+        private:
 
+        };
+    }
+}
 #endif	/* UUID_H */
 
