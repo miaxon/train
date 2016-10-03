@@ -8,7 +8,8 @@
 #ifndef RPCOBJECT_H
 #define	RPCOBJECT_H
 #include "net/ZMQClient.h"
-#include "data/Params.h"
+#include "data/Tuple.h"
+#include "data/RawData.h"
 namespace rpc4stepic {
     namespace rpc {
         namespace local {
@@ -19,7 +20,7 @@ namespace rpc4stepic {
                 virtual ~LocalObject();
                 
             protected:
-                int Call(data::params& header, data::params& params, void* raw_data = nullptr);
+                int Call(data::Tuple& header, data::Tuple& params, data::RawData* raw_data = nullptr);
                 
             private:
                 net::ZMQClient m_client;

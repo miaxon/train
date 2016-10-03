@@ -5,15 +5,15 @@ namespace rpc4stepic {
     namespace rpc {
         namespace data {
 
-            class params {
+            class Tuple {
             public:
 
                 template <typename... Args >
-                params(Args... args) {
+                Tuple(Args... args) {
                     msgpack::type::tuple < Args...> tuple(args...);
                     msgpack::pack(m_sbuf, tuple);
                 }
-                virtual ~params();
+                virtual ~Tuple(){};
 
                 char* data() {
                     return m_sbuf.data();
