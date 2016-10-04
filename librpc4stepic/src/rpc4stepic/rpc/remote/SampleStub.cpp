@@ -21,7 +21,7 @@ namespace rpc4stepic {
                 data::Header* h = Header();
                 std::string& caller = h->Caller();
                 // TO DO replace header caller to real method pointer
-                remote::SampleStub;
+                //remote::SampleStub s;
                 
             }
         }

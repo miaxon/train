@@ -12,7 +12,7 @@ namespace rpc4stepic {
     namespace rpc {
         namespace remote {
 
-            Stub::Stub(zmqpp::message* request, zmqpp::message* responce) : m_request(msg), m_responce(responce) {
+            Stub::Stub(zmqpp::message* request, zmqpp::message* responce) : m_request(request), m_responce(responce) {
             }
 
             Stub::~Stub() {
@@ -43,7 +43,7 @@ namespace rpc4stepic {
                 data::Header* h = Header();
                 std::string& caller = h->Caller();
                 // TO DO replace header caller to real method pointer
-                remote::SampleStub sample_stub;
+                //remote::SampleStub sample_stub;
             }
 
         }

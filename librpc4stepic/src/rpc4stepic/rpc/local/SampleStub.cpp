@@ -18,6 +18,8 @@ namespace rpc4stepic {
             }
             std::string SampleStub::SampleMethod(int i, bool b, std::string s){                
                 data::Tuple parms(i, b, s);
+                auto p = parms.get<int, bool, std::string>();
+                LOG(INFO) << p.get<0>() << " " << p.get<1>() << " " << p.get<2>();
                 if( Call(std::string(__PRETTY_FUNCTION__), parms))
                 {
                     msgpack::type::tuple<std::string > src;

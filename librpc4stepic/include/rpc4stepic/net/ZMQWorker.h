@@ -20,7 +20,7 @@ namespace rpc4stepic {
             virtual ~ZMQWorker();
             void Work(zmqpp::context* ctx, const std::string& bind_string);
         private:
-            int Call(zmqpp::message* request, zmqpp::messqge* responce);
+            int Call(zmqpp::message* request, zmqpp::message* responce);
             std::string m_identity;
         };
     }

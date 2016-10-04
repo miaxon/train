@@ -29,7 +29,7 @@ namespace rpc4stepic {
                     msg.get().convert(*this);
 
                 }
-                virtual ~Header();
+                virtual ~Header(){};
                 std::string& Caller(){
                     return m_caller;
                 }

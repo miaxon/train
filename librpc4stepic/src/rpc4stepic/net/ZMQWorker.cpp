@@ -30,8 +30,7 @@ namespace rpc4stepic {
             }
         }
         int ZMQWorker::Call(zmqpp::message* request, zmqpp::message* responce){
-            Stub  s(request, responce);
-            s.Call();
+            
         }
     }
 }
