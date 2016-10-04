@@ -22,6 +22,13 @@ namespace rpc4stepic {
                 size_t size() {
                     return m_sbuf.size();
                 }
+                template <typename... Args >
+                msgpack::type::tuple < Args...> get(){
+                    msgpack::unpacked msg = msgpack::unpack(m_sbuf.data(), m_sbuf.size());
+                    msgpack::type::tuple < Args...> tuple;
+                    msg.get().convert(tuple);
+                    return tuple;
+                }
             private:
                 msgpack::sbuffer m_sbuf;
 
