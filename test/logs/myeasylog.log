@@ -4666,3 +4666,194 @@
 2016-10-01 22:22:02,270 INFO  [default] Starting server
 2016-10-01 22:22:13,789 INFO  [default] Starting server.
 2016-10-01 22:22:13,790 INFO  [default] Starting server
+2016-10-04 10:27:13,129 INFO  [default] Starting sender
+2016-10-04 10:27:13,130 INFO  [default] Starting senderStarting server
+2016-10-04 10:27:13,131 INFO  [default] 10
+2016-10-04 10:27:18,903 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 10:27:18,904 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-04 10:27:55,630 INFO  [default] Starting sender
+2016-10-04 10:27:55,630 INFO  [default] Starting sender
+2016-10-04 10:27:55,631 INFO  [default] Starting senderStarting server
+2016-10-04 10:27:55,631 INFO  [default] 1032617
+2016-10-04 10:28:09,073 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 10:28:09,073 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-04 10:28:16,017 INFO  [default] Starting server
+2016-10-04 10:28:16,017 INFO  [default] Starting serverStarting sender
+2016-10-04 10:28:16,019 INFO  [default] 1032611
+2016-10-04 10:28:19,797 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 10:28:19,797 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-04 10:28:23,819 INFO  [default] Starting sender
+2016-10-04 10:28:23,819 INFO  [default] Starting senderStarting server
+2016-10-04 10:28:23,819 INFO  [default] 1032757
+2016-10-04 10:28:26,840 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 10:28:26,841 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-04 14:34:43,119 INFO  [default] Starting sender
+2016-10-04 14:34:43,119 INFO  [default] Starting senderStarting server
+2016-10-04 14:36:11,123 INFO  [default] Starting sender
+2016-10-04 14:36:11,123 INFO  [default] Starting sender
+2016-10-04 14:36:11,123 INFO  [default] Starting senderStarting server
+2016-10-04 14:37:48,938 INFO  [default] Starting sender
+2016-10-04 14:37:48,938 INFO  [default] Starting sender
+2016-10-04 14:41:13,613 INFO  [default] Starting server
+2016-10-04 14:41:13,613 INFO  [default] Starting server
+2016-10-04 14:41:13,613 INFO  [default] Starting serverStarting sender
+2016-10-04 14:41:13,614 INFO  [default] 100
+2016-10-04 14:41:23,319 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 14:41:23,319 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-04 14:42:25,851 INFO  [default] Starting sender
+2016-10-04 14:42:25,851 INFO  [default] Starting senderStarting server
+2016-10-04 14:42:25,852 INFO  [default] 10 0 hello
+2016-10-04 14:42:31,862 FATAL [default] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-04 14:42:31,863 WARN  [default] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 14:51:07,906 INFO  [default] Starting server
+2016-10-05 14:51:16,884 INFO  [default] Starting server
+2016-10-05 14:51:19,989 INFO  [default] Starting server
+2016-10-05 14:51:40,120 INFO  [default] Starting server
+2016-10-05 14:51:40,123 INFO  [default] Stopping server
+2016-10-05 14:51:46,370 INFO  [default] Starting server
+2016-10-05 14:51:46,373 INFO  [default] Stopping server
+2016-10-05 14:57:24,810 INFO  [default] Starting server
+2016-10-05 14:57:27,877 INFO  [default] Starting server
+2016-10-05 14:57:30,937 INFO  [default] Starting server
+2016-10-05 14:57:35,898 INFO  [default] Starting server
+2016-10-05 14:57:37,583 INFO  [default] Starting server
+2016-10-05 14:57:42,998 INFO  [default] Starting server
+2016-10-05 14:57:44,961 INFO  [default] Starting server
+2016-10-05 15:11:18,602 INFO  [default] 3
+2016-10-05 15:11:18,606 INFO  [default] 3
+2016-10-05 15:11:29,208 INFO  [default] 3
+2016-10-05 15:11:29,214 INFO  [default] 3
+2016-10-05 15:13:23,027 INFO  [default] 3
+2016-10-05 15:13:23,033 INFO  [default] 3
+2016-10-05 15:13:23,033 INFO  [default] 0
+2016-10-05 15:15:28,079 INFO  [default] 3
+2016-10-05 15:15:28,082 INFO  [default] 3
+2016-10-05 15:15:28,082 INFO  [default] 3
+2016-10-05 15:15:28,082 INFO  [default] 0
+2016-10-05 15:20:08,171 INFO  [default] 3
+2016-10-05 15:20:08,285 INFO  [default] 3
+2016-10-05 15:20:08,286 INFO  [default] 3
+2016-10-05 15:20:08,287 INFO  [default] 0
+2016-10-05 15:22:36,074 INFO  [default] 3
+2016-10-05 15:22:36,078 INFO  [default] 3
+2016-10-05 15:22:36,079 INFO  [default] 3
+2016-10-05 15:22:36,080 INFO  [default] 0
+2016-10-05 15:22:59,654 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:22:59,658 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:22:59,658 [%pid] <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:22:59,659 [%pid] <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:35:06,796 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:35:06,798 [%pid] <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:121] 3
+2016-10-05 15:35:06,798 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:35:06,798 [%pid] <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:35:06,799 [%pid] <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:37:55,432 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:37:55,434 [%pid] <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:121] 3
+2016-10-05 15:37:55,434 [%pid] <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:37:55,434 [%pid] <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:37:55,434 [%pid] <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:37:55,435 [%pid] <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:39:16,937 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:39:17,068 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:121] 3
+2016-10-05 15:39:17,069 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:39:17,069 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:39:17,069 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:39:17,069 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:41:41,541 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:41:41,545 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:121] 3
+2016-10-05 15:41:41,545 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:41:41,545 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] SampleTest1d5e646a-e9fe-446d-b23a-b20232764c18
+2016-10-05 15:41:41,545 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:41:41,545 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:41:41,546 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:42:59,765 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:42:59,937 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:121] 3
+2016-10-05 15:42:59,937 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:42:59,937 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 4bef7043-c249-4a82-b06f-a8b6b06cbf0c
+2016-10-05 15:42:59,937 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:42:59,937 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:42:59,938 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:121] 0
+2016-10-05 15:45:47,163 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:45:47,166 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:122] 3
+2016-10-05 15:45:47,167 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:45:47,167 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 14361263-eede-41f3-8dc7-508400381fe8
+2016-10-05 15:45:47,167 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:45:47,167 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:45:47,167 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:122] 0
+2016-10-05 15:46:03,783 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:46:03,899 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:122] 3
+2016-10-05 15:46:03,900 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 15:46:03,900 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 5c3e20cd-417a-4f85-a299-ca39a76e5164
+2016-10-05 15:46:03,900 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:46:03,900 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 15:46:03,901 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:122] 0
+2016-10-05 15:46:52,253 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:46:52,436 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:122] 3
+2016-10-05 15:46:52,436 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:144] 3
+2016-10-05 15:46:52,437 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:122] 0
+2016-10-05 15:49:36,606 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:146] 3
+2016-10-05 15:49:36,607 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:122] 3
+2016-10-05 15:49:36,607 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:146] 3
+2016-10-05 15:49:36,608 <INFO > void rpc4stepic::rpc::data::TransferObject::SetResponceMessage(const zmqpp::message*) [include/rpc4stepic/net/../data/TransferObject.h:104] 3
+2016-10-05 15:49:36,608 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:122] 0
+2016-10-05 15:54:43,490 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:146] 3
+2016-10-05 15:54:43,494 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {int, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool}] [include/rpc4stepic/net/../data/TransferObject.h:122] 3
+2016-10-05 15:54:43,495 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:146] 3
+2016-10-05 15:54:43,495 <INFO > void rpc4stepic::rpc::data::TransferObject::SetResponceMessage(const zmqpp::message*) [include/rpc4stepic/net/../data/TransferObject.h:104] 3
+2016-10-05 15:54:43,495 <INFO > msgpack::v1::type::tuple<Args ...> rpc4stepic::rpc::data::TransferObject::GetTuple() [with Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}] [../librpc4stepic/include/rpc4stepic/net/../data/TransferObject.h:122] 0
+2016-10-05 15:56:38,049 <FATAL> void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+2016-10-05 15:56:38,051 <WARN > void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 15:56:45,421 <FATAL> void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+2016-10-05 15:56:45,423 <WARN > void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 15:57:48,136 <FATAL> void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+2016-10-05 15:57:48,139 <WARN > void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 15:59:30,495 <FATAL> void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] CRASH HANDLED; Application has crashed due to [SIGSEGV] signal
+2016-10-05 15:59:30,495 <WARN > void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 16:02:46,952 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:140] 3
+2016-10-05 16:02:51,730 <FATAL> void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] CRASH HANDLED; Application has crashed due to [SIGINT] signal
+2016-10-05 16:02:51,730 <WARN > void el::base::debug::logCrashReason(int, bool, el::Level, const char*) [../librpc4stepic/include/easylogging++.h:5627] Aborting application. Reason: Fatal log at [../librpc4stepic/include/easylogging++.h:5627]
+2016-10-05 16:03:33,836 <INFO > void rpc4stepic::rpc::data::TransferObject::GetRequestMessage(zmqpp::message&) [include/rpc4stepic/net/../data/TransferObject.h:140] 3
+2016-10-05 16:05:38,224 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:05:38,224 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test f988641f-d821-452d-a65b-cf93d59686c5
+2016-10-05 16:05:38,224 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:05:57,003 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:05:57,003 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 71654cac-02b7-47ba-b59b-d59d9949c4d7
+2016-10-05 16:05:57,003 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:07:51,530 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:07:51,530 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test b185f9a8-5ae7-49ff-841d-a4e70aef6286
+2016-10-05 16:07:51,530 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:07:51,532 <INFO > void rpc4stepic::net::ZMQClient::Send(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQClient.cpp:33] 3
+2016-10-05 16:08:41,759 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:08:41,760 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 614a70c2-db88-4c80-abe2-c0280fc48a21
+2016-10-05 16:08:41,760 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:08:41,760 <INFO > void rpc4stepic::net::ZMQClient::Send(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQClient.cpp:33] 3
+2016-10-05 16:08:58,723 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:08:58,724 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 39986b15-916f-41d2-840d-d4b32086a4d5
+2016-10-05 16:08:58,724 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:08:58,725 <INFO > void rpc4stepic::net::ZMQClient::Send(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQClient.cpp:33] 3
+2016-10-05 16:09:03,155 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:42] 10 hello 0
+2016-10-05 16:09:03,156 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:44] Sample Test 14de5417-9877-4091-8557-8382e674a042
+2016-10-05 16:09:03,156 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:09:03,156 <INFO > void rpc4stepic::net::ZMQClient::Send(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQClient.cpp:33] 3
+2016-10-05 16:11:01,131 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:41] 10 hello 0
+2016-10-05 16:11:01,132 <INFO > void rpc4stepic::net::ZMQClient::Send(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQClient.cpp:33] 3
+2016-10-05 16:13:44,772 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:39] Meta data: Sample Test 7af7222f-37d7-4e73-bbda-82a689d1a1fc
+2016-10-05 16:13:44,772 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello 0
+2016-10-05 16:13:44,772 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:15:00,779 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:39] Meta data: Sample Test 873b2b14-1a36-4097-add6-2849bc19fb08
+2016-10-05 16:15:00,780 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello 0
+2016-10-05 16:15:00,780 <INFO > void rpc4stepic::net::ZMQWorker::Work(zmqpp::context*, const string&) [src/rpc4stepic/net/ZMQWorker.cpp:30] 3
+2016-10-05 16:17:56,755 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 04c18a8c-075a-43f0-b4f0-cdc04498234a
+2016-10-05 16:17:56,755 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:46] Tuple: 10 hello 0
+2016-10-05 16:18:08,279 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 0bd7f225-be41-4051-a5bb-d364f0ac8d53
+2016-10-05 16:18:08,280 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:46] Tuple: 10 hello 0
+2016-10-05 16:19:23,145 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test de35af74-82bf-4f32-9418-bd7da7c554fc
+2016-10-05 16:19:23,146 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:46] Tuple: 10 hello 0
+2016-10-05 16:21:23,958 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test bd5a2561-c3dc-4ee5-b925-ea27b2cd664d
+2016-10-05 16:21:23,958 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello 0
+2016-10-05 16:22:27,571 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test b074c2d1-b06c-44b1-9bfc-c466e7cdb943
+2016-10-05 16:22:27,572 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 16:22:35,121 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 32007249-1c5e-4efa-80ee-509ae7417ab8
+2016-10-05 16:22:35,122 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 16:22:38,413 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 22847fdd-236f-4114-936a-e274e6073098
+2016-10-05 16:22:38,414 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
