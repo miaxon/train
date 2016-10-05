@@ -40,18 +40,25 @@
           <standard>8</standard>
           <incDir>
             <pElem>../librpc4stepic/include</pElem>
+            <pElem>../librpc4stepic/include/rpc4stepic</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>_ELPP_CXX11</Elem>
+            <Elem>_ELPP_DISABLE_DEFAULT_CRASH_HANDLING</Elem>
+            <Elem>_ELPP_THREAD_SAFE</Elem>
+          </preprocessorList>
         </ccTool>
         <linkerTool>
           <linkerAddLib>
-            <pElem>/home/alex/NetBeansProjects/stepic/2/train/librpc4stepic/dist/Debug/GNU-Linux-x86</pElem>
+            <pElem>../librpc4stepic/dist/Debug/GNU-Linux-x86</pElem>
           </linkerAddLib>
           <linkerDynSerch>
-            <pElem>/home/alex/NetBeansProjects/stepic/2/train/librpc4stepic/dist/Debug/GNU-Linux-x86</pElem>
+            <pElem>../librpc4stepic/dist/Debug/GNU-Linux-x86</pElem>
           </linkerDynSerch>
           <linkerLibItems>
             <linkerLibLibItem>rpc4stepic</linkerLibLibItem>
           </linkerLibItems>
+          <commandLine>-lzmqpp</commandLine>
         </linkerTool>
       </compileType>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">

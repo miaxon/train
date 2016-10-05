@@ -4,29 +4,54 @@
     <logicalFolder name="SourceFiles"
                    displayName="Исходные файлы"
                    projectFiles="true">
-      <logicalFolder name="net" displayName="net" projectFiles="true">
-        <itemPath>src/net/ZMQClient.cpp</itemPath>
-      </logicalFolder>
-      <logicalFolder name="rpc" displayName="rpc" projectFiles="true">
-        <itemPath>src/rpc/RPCFileSystem.cpp</itemPath>
-        <itemPath>src/rpc/RPCObject.cpp</itemPath>
-      </logicalFolder>
-      <logicalFolder name="serialize" displayName="serialize" projectFiles="true">
-        <itemPath>src/serialize/Packer.cpp</itemPath>
-        <itemPath>src/serialize/Request.cpp</itemPath>
-        <itemPath>src/serialize/Responce.cpp</itemPath>
+      <logicalFolder name="rpc4stepic" displayName="rpc4stepic" projectFiles="true">
+        <logicalFolder name="net" displayName="net" projectFiles="true">
+          <itemPath>src/rpc4stepic/net/ZMQClient.cpp</itemPath>
+          <itemPath>src/rpc4stepic/net/ZMQServer.cpp</itemPath>
+          <itemPath>src/rpc4stepic/net/ZMQWorker.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="rpc" displayName="rpc" projectFiles="true">
+          <logicalFolder name="local" displayName="local" projectFiles="true">
+          </logicalFolder>
+          <logicalFolder name="remote" displayName="remote" projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="utils" displayName="utils" projectFiles="true">
+          <itemPath>src/rpc4stepic/utils/UUID.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>src/rpc4stepic/Error.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Файлы заголовков"
                    projectFiles="true">
-      <itemPath>include/Packer.h</itemPath>
-      <itemPath>include/RPCConfig.h</itemPath>
-      <itemPath>include/RPCFileSystem.h</itemPath>
-      <itemPath>include/RPCObject.h</itemPath>
-      <itemPath>include/Request.h</itemPath>
-      <itemPath>include/Responce.h</itemPath>
-      <itemPath>include/ZMQClient.h</itemPath>
+      <logicalFolder name="rpc4stepic" displayName="rpc4stepic" projectFiles="true">
+        <logicalFolder name="config" displayName="config" projectFiles="true">
+          <itemPath>include/rpc4stepic/config/Config.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="data" displayName="data" projectFiles="true">
+          <itemPath>include/rpc4stepic/data/TransferObject.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="net" displayName="net" projectFiles="true">
+          <itemPath>include/rpc4stepic/net/ZMQClient.h</itemPath>
+          <itemPath>include/rpc4stepic/net/ZMQServer.h</itemPath>
+          <itemPath>include/rpc4stepic/net/ZMQWorker.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="rpc" displayName="rpc" projectFiles="true">
+          <logicalFolder name="local" displayName="local" projectFiles="true">
+            <itemPath>include/rpc4stepic/rpc/local/Sample.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="remote" displayName="remote" projectFiles="true">
+            <itemPath>include/rpc4stepic/rpc/remote/Sample.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="utils" displayName="utils" projectFiles="true">
+          <itemPath>include/rpc4stepic/utils/UUID.h</itemPath>
+        </logicalFolder>
+        <itemPath>include/rpc4stepic/Defines.h</itemPath>
+        <itemPath>include/rpc4stepic/Error.h</itemPath>
+        <itemPath>include/easylogging++.h</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Файлы ресурсов"
@@ -48,6 +73,8 @@
     <Elem>src/serialize</Elem>
     <Elem>src/rpc</Elem>
     <Elem>src/net</Elem>
+    <Elem>src/rpc4stepic</Elem>
+    <Elem>include/rpc4stepic</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -62,37 +89,54 @@
           <standard>8</standard>
           <incDir>
             <pElem>include</pElem>
+            <pElem>include/rpc4stepic</pElem>
           </incDir>
         </ccTool>
         <linkerTool>
           <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/librpc4stepic.${CND_DLIB_EXT}</output>
+          <commandLine>-lzmq -lzmqpp -lmsgpackc -luuid</commandLine>
         </linkerTool>
       </compileType>
-      <item path="include/Packer.h" ex="false" tool="3" flavor2="0">
+      <item path="include/easylogging++.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCConfig.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/Defines.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCFileSystem.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/Error.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCObject.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/config/Config.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/Request.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/data/TransferObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="include/Responce.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQClient.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/ZMQClient.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQServer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQWorker.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/rpc/RPCFileSystem.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/rpc/local/Sample.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="src/rpc/RPCObject.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/rpc/remote/Sample.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="src/serialize/Packer.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/utils/UUID.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/serialize/Request.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/rpc4stepic/Error.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/serialize/Responce.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/rpc4stepic/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/net/ZMQServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/net/ZMQWorker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/utils/UUID.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="2">
@@ -115,31 +159,46 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="include/Packer.h" ex="false" tool="3" flavor2="0">
+      <item path="include/easylogging++.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCConfig.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/Defines.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCFileSystem.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/Error.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/RPCObject.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/config/Config.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/Request.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/data/TransferObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="include/Responce.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQClient.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/ZMQClient.h" ex="false" tool="3" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQServer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/net/ZMQWorker.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/rpc/RPCFileSystem.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/rpc/local/Sample.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="src/rpc/RPCObject.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/rpc/remote/Sample.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
-      <item path="src/serialize/Packer.cpp" ex="false" tool="1" flavor2="0">
+      <item path="include/rpc4stepic/utils/UUID.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/serialize/Request.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/rpc4stepic/Error.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/serialize/Responce.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/rpc4stepic/net/ZMQClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/net/ZMQServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/net/ZMQWorker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpc4stepic/utils/UUID.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

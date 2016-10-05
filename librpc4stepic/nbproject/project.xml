@@ -13,6 +13,8 @@
                 <sourceRootElem>src/serialize</sourceRootElem>
                 <sourceRootElem>src/rpc</sourceRootElem>
                 <sourceRootElem>src/net</sourceRootElem>
+                <sourceRootElem>src/rpc4stepic</sourceRootElem>
+                <sourceRootElem>include/rpc4stepic</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

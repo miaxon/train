@@ -1,7 +1,5 @@
-nbproject/
 build/
 dist/
-.gitignore
 # Prerequisites
 *.d
 
