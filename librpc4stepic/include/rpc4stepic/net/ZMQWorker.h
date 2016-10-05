@@ -10,6 +10,7 @@
 #include <string>
 #include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
+#include "../data/TransferObject.h"
 #include "easylogging++.h"
 namespace rpc4stepic {
     namespace net {
@@ -20,7 +21,7 @@ namespace rpc4stepic {
             virtual ~ZMQWorker();
             void Work(zmqpp::context* ctx, const std::string& bind_string);
         private:
-            int Call(zmqpp::message* request, zmqpp::message* responce);
+            void Call(rpc::data::TransferObject& tr_object);
             std::string m_identity;
         };
     }

@@ -7,7 +7,9 @@
 
 #ifndef ERROR_H
 #define	ERROR_H
-#include "../easylogging++.h"
+#include <cstdlib>
+#include <string>
+//#include "../easylogging++.h"
 namespace rpc4stepic {
 
     class Error {
@@ -19,9 +21,11 @@ namespace rpc4stepic {
         bool OK() {
             return m_code == 0;
         }
+
         bool FAIL() {
             return m_code != 0;
         }
+
         std::string message() const {
             return m_message;
         }
@@ -34,10 +38,10 @@ namespace rpc4stepic {
         std::string m_message;
     };
 
-    inline MAKE_LOGGABLE(Error, obj, os) {
+    /*inline MAKE_LOGGABLE(Error, obj, os) {
         os << "*ERROR* {code:" << obj.code() << ", message:" << obj.message() << "}";
         return os;
-    }
+    }*/
 }
 #endif	/* ERROR_H */
 

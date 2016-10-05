@@ -15,7 +15,6 @@
 #include "ZMQWorker.h"
 #include "Error.h"
 #include "Defines.h"
-#include "easylogging++.h"
 namespace rpc4stepic {
     namespace net {
         using namespace std;

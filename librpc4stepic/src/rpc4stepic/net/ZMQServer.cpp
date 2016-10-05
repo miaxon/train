@@ -25,7 +25,6 @@ namespace rpc4stepic {
         }
 
         void ZMQServer::run() {
-            LOG(INFO) << "Starting server";
             m_frontend.bind(m_endpoint);
             std::string backend = "inproc://" + utils::UUID::GetUUIDString();
             m_backend.bind(backend);
@@ -38,11 +37,7 @@ namespace rpc4stepic {
             try {
                 zmqpp::proxy(m_frontend, m_backend);
             } catch (std::exception &e) {
-            }
-            
-            LOG(INFO) << "Stopping server";
-
-
+            }           
         }
     }
 }

@@ -10,7 +10,7 @@
 #include <cstdlib>
 #include <string>
 #include <zmqpp/zmqpp.hpp>
-#include "easylogging++.h"
+#include "../data/TransferObject.h"
 #include "Defines.h"
 namespace rpc4stepic {
     namespace net {
@@ -20,9 +20,7 @@ namespace rpc4stepic {
             ZMQClient();
             ZMQClient(const zmqpp::endpoint_t& endpoint);
             virtual ~ZMQClient();
-            int Connect(const zmqpp::endpoint_t& endpoint);
-            void Send(const std::string& msg); /* for tests */
-            bool Send(zmqpp::message& req, zmqpp::message& rsp);
+            void Send(rpc::data::TransferObject& tr_object);
         private:
             zmqpp::context m_ctx;
             zmqpp::socket m_socket;
