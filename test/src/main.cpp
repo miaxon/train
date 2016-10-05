@@ -41,7 +41,5 @@ void test_rpc() {
 int main(int argc, char** argv) {
     START_EASYLOGGINGPP(argc, argv);
     log_config();
-    test_rpc();
-    
 }
 

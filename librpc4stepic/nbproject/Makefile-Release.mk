@@ -35,12 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/src/net/ZMQClient.o \
-	${OBJECTDIR}/src/rpc/RPCFileSystem.o \
-	${OBJECTDIR}/src/rpc/RPCObject.o \
-	${OBJECTDIR}/src/serialize/Packer.o \
-	${OBJECTDIR}/src/serialize/Request.o \
-	${OBJECTDIR}/src/serialize/Responce.o
+	${OBJECTDIR}/src/rpc4stepic/Error.o \
+	${OBJECTDIR}/src/rpc4stepic/net/ZMQClient.o \
+	${OBJECTDIR}/src/rpc4stepic/net/ZMQServer.o \
+	${OBJECTDIR}/src/rpc4stepic/net/ZMQWorker.o \
+	${OBJECTDIR}/src/rpc4stepic/utils/UUID.o
 
 
 # C Compiler Flags
@@ -67,35 +66,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT}: ${O
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/liblibrpc4stepic.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
 
-${OBJECTDIR}/src/net/ZMQClient.o: src/net/ZMQClient.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/net
+${OBJECTDIR}/src/rpc4stepic/Error.o: src/rpc4stepic/Error.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc4stepic
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/net/ZMQClient.o src/net/ZMQClient.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc4stepic/Error.o src/rpc4stepic/Error.cpp
 
-${OBJECTDIR}/src/rpc/RPCFileSystem.o: src/rpc/RPCFileSystem.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/rpc
+${OBJECTDIR}/src/rpc4stepic/net/ZMQClient.o: src/rpc4stepic/net/ZMQClient.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc4stepic/net
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc/RPCFileSystem.o src/rpc/RPCFileSystem.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc4stepic/net/ZMQClient.o src/rpc4stepic/net/ZMQClient.cpp
 
-${OBJECTDIR}/src/rpc/RPCObject.o: src/rpc/RPCObject.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/rpc
+${OBJECTDIR}/src/rpc4stepic/net/ZMQServer.o: src/rpc4stepic/net/ZMQServer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc4stepic/net
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc/RPCObject.o src/rpc/RPCObject.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc4stepic/net/ZMQServer.o src/rpc4stepic/net/ZMQServer.cpp
 
-${OBJECTDIR}/src/serialize/Packer.o: src/serialize/Packer.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/serialize
+${OBJECTDIR}/src/rpc4stepic/net/ZMQWorker.o: src/rpc4stepic/net/ZMQWorker.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc4stepic/net
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Packer.o src/serialize/Packer.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc4stepic/net/ZMQWorker.o src/rpc4stepic/net/ZMQWorker.cpp
 
-${OBJECTDIR}/src/serialize/Request.o: src/serialize/Request.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/serialize
+${OBJECTDIR}/src/rpc4stepic/utils/UUID.o: src/rpc4stepic/utils/UUID.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/rpc4stepic/utils
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Request.o src/serialize/Request.cpp
-
-${OBJECTDIR}/src/serialize/Responce.o: src/serialize/Responce.cpp 
-	${MKDIR} -p ${OBJECTDIR}/src/serialize
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/serialize/Responce.o src/serialize/Responce.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/rpc4stepic/utils/UUID.o src/rpc4stepic/utils/UUID.cpp
 
 # Subprojects
 .build-subprojects:

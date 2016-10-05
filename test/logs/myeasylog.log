@@ -4857,3 +4857,15 @@
 2016-10-05 16:22:35,122 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
 2016-10-05 16:22:38,413 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 22847fdd-236f-4114-936a-e274e6073098
 2016-10-05 16:22:38,414 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:11:49,564 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test d037edc9-756d-429b-92a5-6e7acbd91929
+2016-10-05 20:11:49,567 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:11:52,915 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test dea1e3a2-61c3-45ec-ba1b-486e6093dc66
+2016-10-05 20:11:52,916 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:12:18,394 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 2d4b9d8b-6d21-4168-bad1-9d375f69229e
+2016-10-05 20:12:18,394 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:12:18,587 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 4e60741e-f998-4c6e-bb7b-35bd1afcd930
+2016-10-05 20:12:18,587 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:12:18,590 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test b40f568f-ea20-4fa6-8e9b-7c22198d5b57
+2016-10-05 20:12:18,590 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
+2016-10-05 20:12:18,592 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:38] Meta data: Sample Test 3e8b990e-c671-4a01-a6b0-643ca07dd936
+2016-10-05 20:12:18,592 <INFO > void rpc4stepic::net::ZMQWorker::Call(rpc4stepic::rpc::data::TransferObject&) [src/rpc4stepic/net/ZMQWorker.cpp:47] Tuple: 10 hello false
