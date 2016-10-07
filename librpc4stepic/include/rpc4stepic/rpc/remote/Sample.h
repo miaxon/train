@@ -8,7 +8,6 @@
 #ifndef SAMPLE_H
 #define	SAMPLE_H
 #include "data/TransferObject.h"
-typedef msgpack::type::tuple<std::string, std::string, std::string> metadata;
 namespace rpc4stepic {
     namespace rpc {
         namespace local {
@@ -19,7 +18,7 @@ namespace rpc4stepic {
                 virtual ~Sample();
 
                 void Sample(data::TransferObject& tr_object) {
-                    metadata meta = tr_object.GetMetaData<std::string, std::string, std::string>()
+                    
                 }
             private:
 

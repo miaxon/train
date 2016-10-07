@@ -35,8 +35,8 @@ namespace rpc4stepic {
 
         void ZMQWorker::Call(rpc::data::TransferObject& tr_object) {
             rpc::data::MetaData md = tr_object.GetMetaData();
-            LOG(INFO) << "Meta data: " << md.remote_class() << " " << md.remote_method() << " " << md.uuid();
-
+            //LOG(INFO) << "Meta data: " << md.remote_class() << " " << md.remote_method() << " " << md.uuid();
+            //std::cout << "Meta data: " << md.remote_class() << " " << md.remote_method() << " " << md.uuid()<< std::endl;
             msgpack::type::tuple<int, std::string, bool> t = tr_object.GetTuple<int, std::string, bool>();
             int i;
             std::string s;
@@ -44,7 +44,8 @@ namespace rpc4stepic {
             i = t.get<0>();
             s = t.get<1>();
             b = t.get<2>();
-            LOG(INFO) << "Tuple: " << i << " " << s << " " << (b ? "true" : "false");
+            //LOG(INFO) << "Tuple: " << i << " " << s << " " << (b ? "true" : "false");
+            //std::cout << "Tuple: " << i << " " << s << " " << (b ? "true" : "false") << std::endl;
             std::stringstream ss;
             ss << i << " " << s << " ...yeap! " << (b ? "true" : "false");
             //simple echo            

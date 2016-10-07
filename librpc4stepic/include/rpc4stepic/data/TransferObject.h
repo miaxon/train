@@ -10,7 +10,7 @@
 #include <msgpack.hpp>
 #include <zmqpp/zmqpp.hpp>
 #include "utils/UUID.h"
-#include "easylogging++.h"
+//#include "easylogging++.h"
 /*
  Transfer object contains three parts (zmq - frames): 
  * metadata - remote method for call and metadata, 
@@ -36,6 +36,8 @@ namespace rpc4stepic {
                 }
 
                 virtual ~MetaData() {
+                    
+                    
                 }
 
                 std::string& remote_class() {
@@ -77,20 +79,14 @@ namespace rpc4stepic {
                 };
 
                 virtual ~TransferObject() {
-                    m_sbuf_meta.clear();
-                    m_sbuf_meta.release();
-                    m_sbuf_parms.clear();
-                    m_sbuf_parms.release();
                 };
 
                 void SetMetaData(MetaData& md) {
-                    m_sbuf_meta.clear();
                     msgpack::pack(m_sbuf_meta, md);
                 }
 
                 template <typename... Args >
                 void SetTuple(Args... args) {
-                    m_sbuf_parms.clear();
                     msgpack::type::tuple < Args...> tuple(args...);
                     msgpack::pack(m_sbuf_parms, tuple);
                 }
@@ -108,6 +104,7 @@ namespace rpc4stepic {
                 MetaData GetMetaData() {
                     msgpack::unpacked msg = msgpack::unpack(static_cast<const char*> (m_msg.raw_data(0)), m_msg.size(0));
                     MetaData md;
+                    
                     try {
                         msg.get().convert(md);
                     } catch (msgpack::type_error& err) {
@@ -135,9 +132,9 @@ namespace rpc4stepic {
                 }
 
                 void GetRequestMessage(zmqpp::message& msg) {
-                    msg.add_nocopy_const(m_sbuf_meta.data(), m_sbuf_meta.size());
-                    msg.add_nocopy_const(m_sbuf_parms.data(), m_sbuf_parms.size());
-                    msg.add_nocopy_const(m_raw_data, m_raw_size);
+                    msg.add_raw(m_sbuf_meta.data(), m_sbuf_meta.size());
+                    msg.add_raw(m_sbuf_parms.data(), m_sbuf_parms.size());
+                    msg.add_raw(m_raw_data, m_raw_size);
                 }
 
             private:

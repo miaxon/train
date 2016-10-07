@@ -8,10 +8,11 @@
 #ifndef ZMQWORKER_H
 #define	ZMQWORKER_H
 #include <string>
+#include <sstream>
 #include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
 #include "../data/TransferObject.h"
-#include "easylogging++.h"
+//#include "easylogging++.h"
 namespace rpc4stepic {
     namespace net {
 
