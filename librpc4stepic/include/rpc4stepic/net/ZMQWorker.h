@@ -12,6 +12,7 @@
 #include "utils/UUID.h"
 #include <zmqpp/zmqpp.hpp>
 #include "../data/TransferObject.h"
+#include "../rpc/remote/Caller.h"
 namespace rpc4stepic {
     namespace net {
 

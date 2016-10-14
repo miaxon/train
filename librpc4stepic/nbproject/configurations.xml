@@ -42,6 +42,7 @@
             <itemPath>include/rpc4stepic/rpc/local/Sample.h</itemPath>
           </logicalFolder>
           <logicalFolder name="remote" displayName="remote" projectFiles="true">
+            <itemPath>include/rpc4stepic/rpc/remote/Caller.h</itemPath>
             <itemPath>include/rpc4stepic/rpc/remote/Sample.h</itemPath>
           </logicalFolder>
         </logicalFolder>
@@ -121,6 +122,11 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="include/rpc4stepic/rpc/remote/Caller.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/rpc4stepic/rpc/remote/Sample.h"
             ex="false"
             tool="3"
@@ -179,6 +185,11 @@
       <item path="include/rpc4stepic/net/ZMQWorker.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/rpc4stepic/rpc/local/Sample.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/rpc4stepic/rpc/remote/Caller.h"
             ex="false"
             tool="3"
             flavor2="0">

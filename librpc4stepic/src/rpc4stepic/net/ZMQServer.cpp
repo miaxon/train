@@ -16,7 +16,8 @@ namespace rpc4stepic {
         m_backend(m_ctx, zmqpp::socket_type::dealer),
         m_endpoint(endpoint),
         m_nworkers(nworkers) {
-            std:thread t(std::bind(&net::ZMQServer::run, this));
+std:
+            thread t(std::bind(&net::ZMQServer::run, this));
             t.detach();
         }
 
@@ -25,7 +26,7 @@ namespace rpc4stepic {
         }
 
         void ZMQServer::run() {
-            
+
             m_frontend.bind(m_endpoint);
             std::string backend = "inproc://" + utils::UUID::GetUUIDString();
             m_backend.bind(backend);
@@ -39,7 +40,8 @@ namespace rpc4stepic {
             try {
                 zmqpp::proxy(m_frontend, m_backend);
             } catch (std::exception &e) {
-            }           
+                LOG(LOG_ERR, "Failed to proxy backend: %s", e.what());
+            }
         }
     }
 }

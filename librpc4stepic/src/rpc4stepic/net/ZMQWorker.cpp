@@ -34,6 +34,7 @@ namespace rpc4stepic {
         }
 
         void ZMQWorker::Call(rpc::data::TransferObject& tr_object) {
+            rpc::remote::Caller c;
             rpc::data::MetaData md = tr_object.GetMetaData();
             //LOG(INFO) << "Meta data: " << md.remote_class() << " " << md.remote_method() << " " << md.uuid();
             //std::cout << "Meta data: " << md.remote_class() << " " << md.remote_method() << " " << md.uuid()<< std::endl;

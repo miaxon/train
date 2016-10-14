@@ -10,6 +10,7 @@
 #include <msgpack.hpp>
 #include <zmqpp/zmqpp.hpp>
 #include "utils/UUID.h"
+#define RPC_FUNC(X) void X(data::TransferObject& o)
 /*
  Transfer object contains three parts (zmq - frames): 
  * metadata - remote method for call and metadata, 
@@ -99,7 +100,6 @@ namespace rpc4stepic {
                     m_msg.copy(msg);
                 }
 
-                template <typename... Args >
                 MetaData GetMetaData() {
                     msgpack::unpacked msg = msgpack::unpack(static_cast<const char*> (m_msg.raw_data(0)), m_msg.size(0));
                     MetaData md;
