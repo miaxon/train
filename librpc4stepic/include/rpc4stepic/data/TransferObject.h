@@ -10,7 +10,6 @@
 #include <msgpack.hpp>
 #include <zmqpp/zmqpp.hpp>
 #include "utils/UUID.h"
-//#include "easylogging++.h"
 /*
  Transfer object contains three parts (zmq - frames): 
  * metadata - remote method for call and metadata, 
@@ -96,7 +95,7 @@ namespace rpc4stepic {
                     m_raw_size = size;
                 }
 
-                void SetResponceMessage(zmqpp::message& msg) {
+                void SetMessage(zmqpp::message& msg) {
                     m_msg.copy(msg);
                 }
 
@@ -131,7 +130,7 @@ namespace rpc4stepic {
                     return m_msg.size(2);
                 }
 
-                void GetRequestMessage(zmqpp::message& msg) {
+                void GetMessage(zmqpp::message& msg) {
                     msg.add_raw(m_sbuf_meta.data(), m_sbuf_meta.size());
                     msg.add_raw(m_sbuf_parms.data(), m_sbuf_parms.size());
                     msg.add_raw(m_raw_data, m_raw_size);

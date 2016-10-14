@@ -10,11 +10,14 @@
 
 #include <string>
 #include "utils/UUID.h"
+#include <libdaemon/dlog.h>
 #include <zmqpp/zmqpp.hpp>
 #include "zmqpp/proxy.hpp" 
 #include "ZMQWorker.h"
 #include "Error.h"
 #include "Defines.h"
+#define LOG daemon_log
+
 namespace rpc4stepic {
     namespace net {
         using namespace std;

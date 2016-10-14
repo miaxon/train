@@ -26,11 +26,11 @@ namespace rpc4stepic {
 
         void ZMQClient::Send(rpc::data::TransferObject& tr_object) {            
             zmqpp::message req;
-            tr_object.GetRequestMessage(req);
+            tr_object.GetMessage(req);
             m_socket.send(req);
             zmqpp::message rsp;
             m_socket.receive(rsp);
-            tr_object.SetResponceMessage(rsp);
+            tr_object.SetMessage(rsp);
         }
 
     }

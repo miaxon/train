@@ -9,7 +9,6 @@
 #define	ERROR_H
 #include <cstdlib>
 #include <string>
-//#include "../easylogging++.h"
 namespace rpc4stepic {
 
     class Error {
@@ -38,10 +37,6 @@ namespace rpc4stepic {
         std::string m_message;
     };
 
-    /*inline MAKE_LOGGABLE(Error, obj, os) {
-        os << "*ERROR* {code:" << obj.code() << ", message:" << obj.message() << "}";
-        return os;
-    }*/
 }
 #endif	/* ERROR_H */
 

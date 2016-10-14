@@ -13,6 +13,18 @@
             <file>file:/home/alex/NetBeansProjects/stepic/2/train/librpc4stepic/include/Responce.h</file>
             <file>file:/home/alex/NetBeansProjects/stepic/2/train/librpc4stepic/src/net/ZMQClient.cpp</file>
         </group>
-        <group/>
+        <group>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/net/ZMQServer.h</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/net/ZMQWorker.h</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/utils/UUID.h</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/rpc/remote/Sample.h</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/rpc/local/Sample.h</file>
+            <file>file:/Y:/librpc4stepic/src/rpc4stepic/net/ZMQClient.cpp</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/net/ZMQClient.h</file>
+            <file>file:/Y:/librpc4stepic/src/rpc4stepic/net/ZMQServer.cpp</file>
+            <file>file:/Y:/librpc4stepic/include/rpc4stepic/data/TransferObject.h</file>
+            <file>file:/Y:/librpc4stepic/src/rpc4stepic/net/ZMQWorker.cpp</file>
+            <file>file:/Y:/librpc4stepic/src/rpc4stepic/utils/UUID.cpp</file>
+        </group>
     </open-files>
 </project-private>

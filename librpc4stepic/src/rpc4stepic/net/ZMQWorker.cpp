@@ -26,7 +26,7 @@ namespace rpc4stepic {
                     rpc::data::TransferObject tr_object(req);
                     Call(tr_object);
                     zmqpp::message rsp;
-                    tr_object.GetRequestMessage(rsp);
+                    tr_object.GetMessage(rsp);
                     socket.send(rsp);
                 }
             } catch (std::exception &e) {
