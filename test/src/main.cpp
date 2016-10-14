@@ -21,7 +21,7 @@ using namespace rpc4stepic;
  * 
  */
 static std::string endpoint_local("tcp://127.0.0.1:3333");
-static net::ZMQServer srv(endpoint_local);
+//static net::ZMQServer srv(endpoint_local);
 void test_rpc() {
 
     std::thread::id id = std::this_thread::get_id();
