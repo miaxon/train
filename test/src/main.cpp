@@ -16,7 +16,6 @@
 
 using namespace std;
 using namespace rpc4stepic;
-
 /*
  * 
  */
@@ -25,7 +24,6 @@ static std::string endpoint_local("tcp://127.0.0.1:3333");
 void test_rpc() {
 
     std::thread::id id = std::this_thread::get_id();
-
     cout << "Sapmle remote call Test(10, \"hello\", false)" << endl;
     rpc::local::Sample o(endpoint_local, std::string("Sample"));
     for (int i = 0; i < 3; i++) {
